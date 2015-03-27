@@ -1,0 +1,205 @@
+
+/*
+
+ul li   				**** a todos los li dentro de ul
+ul > li 				**** a los hijos directos
+section1 section2		**** se da estilos al section2 que esta al costado de section1
+[href]					**** a todos los elementos que tengan el atributo href
+
+
+display: block  		*** ocupa todo el ancho del navegador
+display: inline-block   *** toma el ancho de su contenido
+display: inline			*** se comporta como texto
+display: none			*** no se muestra
+
+
+position: static		*** por defecto
+position: relative		*** no respeta las cajas adyacentes, 
+							se puede superpocicionar
+	top:;
+	right:;
+	bottom:;
+	left:;
+margin-top:  			*** permite conservar los margenes
+position: absolute		*** se mueve al elemento mas cercano ea su padre con position relative
+	right:;	
+position: fixed;		*** al hacer scroll, siempre se muestra	
+	top:;
+	right:;
+	bottom:;
+	left:;
+z-index: 1;				*** apilacion
+	
+
+*/
+
+
+/* UTILIDADES */
+
+.u-title{
+	color: #00CCFF;
+	border-bottom: 2px dashed #00CCFF; 
+	font-weight: normal; 
+	font-size: 1.5em;	
+	padding-bottom: .5em;   /* 1em = 24px */
+	text-align: center;
+}
+
+
+/*  MENU */ 
+
+.MainMenu{
+	background: #1E1E1E;
+	text-align: center;
+	/*   60/16px   */
+	height: 3.75em;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+.MainMenu-list{
+	margin: 0;
+	padding: 0;
+}
+
+.MainMenu-item{
+	display: inline-block;
+}
+
+.MainMenu-link{
+	color: #00DBFF;
+	text-decoration: none;
+	line-height: 3.75em;  /* se centra una linea verticalmente con respecto al padre (MainMenu) */
+	margin-right: 1.5em;
+}
+
+/* HEADER */
+
+.Header{
+	margin-top: 3.75em;
+	background-image: url('../images/portada.jpg'); 
+	background-repeat: no-repeat; 
+	background-position: center;
+	background-size: cover; /* 100% */
+	text-align: center;
+	padding: 1.2em 0;  /*  1.2*16px  */
+}
+
+.Header-imageContainer{
+	margin: 0;
+}
+
+.Header-image{
+	border: 5px solid white;
+	border-radius: 50%;		
+}
+
+.Header-image:hover{
+	border-color: orange;
+	-webkit-transition: 1s;
+	-webkit-transform: rotateY(360deg);
+}
+
+.Header-name, 
+.Header-link{
+	color: white;
+}
+
+.Header-link{
+	/* 35/16px */
+	font-size: 2.2em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.Header-name{
+	font-size: 1.5em;   /* 25/16px */
+	font-weight: 300;
+	margin: 0;
+}
+
+
+/* PROFILE */
+
+.Profile{
+	text-align: center;
+}
+
+.Profile-link{
+	background: orange;
+	color: white;
+	text-decoration: none;
+	padding: .5em 1em;
+	border-radius: 2em;
+	margin-right: .5em;
+}
+
+.Work{
+	margin-top: 2em;
+	text-align: center;
+}
+
+.Work-item{
+	display: inline-block;	
+	margin-right: 1.8em;
+	margin-bottom: 1.8em;
+}
+
+.Work-imageContainer{
+	margin: 0;
+}
+
+.Work-description{
+	font-size: 1.1em;
+	color: #515151;
+	font-style: italic;
+}
+
+.Footer{
+	background-image: url('../images/footer.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 2em 0;
+	text-align: center;
+}
+
+.Footer-form{
+	text-align: center;
+	display: inline-block;
+}
+
+.Footer-left{
+	display: inline-block;
+	width: 32em;
+	text-align: center;
+	vertical-align: top;
+}
+
+.Footer-title{
+	color: white;
+}
+
+.Footer-formInput,
+.Footer-textarea{
+	background: white;
+	border: none;
+	display: block;
+	border-radius: 2em;
+	padding: .5em;
+	margin: 0 auto 1em; /* para que se centren elementos con display block */
+}
+.Footer-textarea{
+	resize: none;
+}
+
+.Footer-button{
+	background: orange;
+	color: white;
+	border: none;
+	border-radius: 1em;
+	padding: .5em 1em;
+}
+
